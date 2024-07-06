@@ -20,7 +20,7 @@ const Sidebar = () => {
     const Menu = [
         {
             icon: <MdDashboard size={20} />, // Adjust size as needed
-            href: "/",
+            href: "/dashboard",
             label: "Dashboard",
             roles: [""],
             isActive: pathname === `/`,
@@ -92,7 +92,7 @@ const Sidebar = () => {
                         className={`block float-left mr-2 duration-500 ${open ? 'rotate-0 h-auto w-auto' : 'rotate-180 h-[60px] w-[200px]'}`}
                     />
                     <div className='flex justify-center items-center text-center'>
-                        <h1 className={`text-lg origin-left font-semibold transition-transform duration-300 ${!open ? 'scale-0' : 'scale-100'}`}>
+                        <h1 className={`text-md origin-left font-semibold transition-transform duration-300 ${!open ? 'scale-0' : 'scale-100'}`}>
                             Food Store
                         </h1>
                     </div>

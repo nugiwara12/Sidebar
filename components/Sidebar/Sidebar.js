@@ -31,11 +31,12 @@ const Sidebar = () => {
     const Menu = [
         {
             icon: <MdDashboard size={20} />,
-            href: "/",
+            href: "/dashboard",
             label: "Dashboard",
             roles: [""],
-            isActive: pathname === `/`,
+            isActive: pathname === `/dashboard`,
         },
+        
         {
             icon: <GrUserAdmin size={20} />,
             href: "/admin",
